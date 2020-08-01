@@ -169,3 +169,69 @@ input:focus {
   text-transform: uppercase;
   border-bottom: 1px solid #d7d7d7;
 }
+
+/* dropdown and subDropdown background color */
+#menu .drop-down,
+#menu .sub-drop-down {
+  background: rgb(252, 250, 250);
+}
+
+#menu li {
+  width: 100%;
+  text-align: left;
+  position: relative;
+  font-size: 10.8px;
+}
+
+#menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: black;
+}
+
+/* main dropdown */
+.drop-down {
+  position: absolute;
+  width: 175px;
+  flex-wrap: wrap;
+  left: 0;
+  top: -40px;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: -1;
+}
+.drop-down li {
+  text-align: left;
+  padding-top: 10px;
+}
+
+/* dropdown hover effect */
+ul li:hover .drop-down {
+  visibility: visible;
+  top: 40px;
+}
+#menu .drop-down li a:hover {
+  background: #d8d6d6;
+}
+
+/* sub dropdown */
+.sub-drop-down {
+  position: absolute;
+  left: 102%;
+  flex-wrap: wrap;
+  top: -20px;
+  width: 100%;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: -1;
+}
+
+.drop-down li:hover .sub-drop-down {
+  top: 0px;
+  visibility: visible;
+}
+
+.main-menu .sell a {
+  color: #ecc7d0 !important;
+}
