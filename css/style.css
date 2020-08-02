@@ -210,12 +210,17 @@ input:focus {
 }
 
 /* dropdown hover effect */
+#menu li a:hover {
+  color: #ecc7d0;
+}
+
 ul li:hover .drop-down {
   visibility: visible;
   top: 40px;
 }
 #menu .drop-down li a:hover {
   background: #d8d6d6;
+  color: #262626;
 }
 
 /* sub dropdown */
@@ -235,9 +240,9 @@ ul li:hover .drop-down {
   visibility: visible;
 }
 
-.main-menu .sell a {
+/* .main-menu .sell a {
   color: #ecc7d0 !important;
-}
+} */
 
 /* menu header */
 .menu-header {
