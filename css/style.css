@@ -326,7 +326,7 @@ ul li:hover .drop-down {
   }
 
   .main-menu {
-    display: none;
+    display: block;
   }
   .menu-header {
     display: block;
