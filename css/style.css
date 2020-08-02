@@ -360,44 +360,38 @@ ul li:hover .drop-down {
   }
 }
 
+/* RWD breakpoints for small screens */
 @media (max-width: 300px) {
-  /* top header */
-  /* .container {
-    flex: table;
-    justify-content: center;
-  } */
-  /* ul {
+  /* top header ul */
+  ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-  } */
+  }
+
+  .main-header {
+    padding: 20px 0px;
+  }
   /* main header */
-  /* .screen {
+  .screen {
     position: relative;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
   }
   .logo {
     margin-bottom: 40px;
-  } */
+  }
 
-  /* .search-area {
+  .search-area {
+    width: 50%;
     position: relative;
-    align-items: right;
-    padding-left: 20px;
-    /* left: 0;
-    top: 0; */
-    /* bottom: -20px;
-    left: 13px;
-    padding: 0 25px; */
-  } */
+    left: 0;
+    bottom: 20px;
+    justify-content: space-around;
+  }
 
-  /* .cart-icon {
+  .cart-icon {
     position: relative;
-    /* bottom: -20px;
-    right: 13px; */
-  } */
-
-  /* .cart-icon p {
-    font-size: 12px;
-  } */
+    bottom: -2px;
+    left: 2px;
+  }
 }
