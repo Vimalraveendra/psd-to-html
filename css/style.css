@@ -236,6 +236,11 @@ ul li:hover .drop-down {
   color: #ecc7d0 !important;
 }
 
+/* menu header */
+.menu-header {
+  display: none;
+}
+
 /* RWD breakpoints for small screens */
 @media (max-width: 960px) {
   /* top header */
@@ -326,7 +331,7 @@ ul li:hover .drop-down {
   }
 
   .main-menu {
-    display: block;
+    display: none;
   }
   .menu-header {
     display: block;
