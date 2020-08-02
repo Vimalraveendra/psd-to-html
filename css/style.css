@@ -235,3 +235,56 @@ ul li:hover .drop-down {
 .main-menu .sell a {
   color: #ecc7d0 !important;
 }
+
+@media (max-width: 960px) {
+  /* top header */
+  .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .top-right-info li,
+  .top-right-info .line {
+    border: none;
+  }
+
+  .top-left-info li,
+  .top-right-info li {
+    padding: 3px 0px;
+    font-size: 13px;
+  }
+  .top-left-info i {
+    font-size: 20px;
+    padding: 8px;
+  }
+
+  /* main header */
+  .screen {
+    position: relative;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 40px;
+  }
+
+  .search-area {
+    position: absolute;
+    bottom: -20px;
+    left: 13px;
+    padding: 0 25px;
+  }
+
+  .cart-icon {
+    position: absolute;
+    bottom: -20px;
+    right: 13px;
+  }
+
+  .cart-icon p {
+    font-size: 12px;
+  }
+}
