@@ -41,7 +41,7 @@ h6 {
   justify-content: space-between;
 }
 
-/* Top Header Area */
+/* Top  Header Area */
 
 .top-header {
   background-color: #ffffff;
@@ -83,7 +83,7 @@ ul {
   padding: 40px 0;
 }
 
-/* `main header Logo */
+/* main header Logo */
 .logo {
   width: 145px;
 }
@@ -134,12 +134,14 @@ input:focus {
   align-items: flex-end;
   position: relative;
 }
+
 /* main header cart icon shopping-bag */
 .cart-icon .fa-shopping-bag {
   font-size: 30px;
   padding-right: 8px;
   color: #6e6b6b;
 }
+
 /* main header cart icon circle */
 .cart-icon .fa-circle {
   font-size: 18px;
@@ -148,6 +150,7 @@ input:focus {
   left: 15px;
   bottom: -10px;
 }
+
 /* main header cart icon number */
 .cart-icon .number {
   position: absolute;
@@ -343,6 +346,8 @@ ul li:hover .drop-down {
     color: #fff;
     font-size: 18px;
   }
+
+  /* menu icon for small screens */
   .fa-bars {
     color: #fff;
     border: 1px solid #fff;
@@ -353,4 +358,46 @@ ul li:hover .drop-down {
   .display {
     display: block;
   }
+}
+
+@media (max-width: 300px) {
+  /* top header */
+  /* .container {
+    flex: table;
+    justify-content: center;
+  } */
+  /* ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  } */
+  /* main header */
+  /* .screen {
+    position: relative;
+    align-items: center;
+  }
+  .logo {
+    margin-bottom: 40px;
+  } */
+
+  /* .search-area {
+    position: relative;
+    align-items: right;
+    padding-left: 20px;
+    /* left: 0;
+    top: 0; */
+    /* bottom: -20px;
+    left: 13px;
+    padding: 0 25px; */
+  } */
+
+  /* .cart-icon {
+    position: relative;
+    /* bottom: -20px;
+    right: 13px; */
+  } */
+
+  /* .cart-icon p {
+    font-size: 12px;
+  } */
 }
