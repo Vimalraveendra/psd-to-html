@@ -236,6 +236,7 @@ ul li:hover .drop-down {
   color: #ecc7d0 !important;
 }
 
+/* RWD breakpoints for small screens */
 @media (max-width: 960px) {
   /* top header */
   .container {
@@ -286,5 +287,65 @@ ul li:hover .drop-down {
 
   .cart-icon p {
     font-size: 12px;
+  }
+
+  /* main menu */
+  #menu {
+    display: table;
+    width: 100%;
+    background: black;
+  }
+  #menu li {
+    font-size: 16px;
+  }
+  #menu li a {
+    color: white;
+  }
+
+  .drop-down,
+  .sub-drop-down {
+    position: relative;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    transition: none;
+    visibility: visible;
+    display: none;
+    z-index: 1;
+  }
+  ul li:hover .drop-down {
+    top: 0px;
+  }
+  #menu .drop-down,
+  #menu .sub-drop-down {
+    background: black;
+  }
+  .main-menu #menu {
+    padding-top: 0;
+    border-bottom: none;
+  }
+
+  .main-menu {
+    display: none;
+  }
+  .menu-header {
+    display: block;
+    background: #272722;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 18px;
+  }
+  .fa-bars {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+  }
+  /* toggle class */
+  .display {
+    display: block;
   }
 }
